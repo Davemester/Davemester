@@ -1,0 +1,17 @@
+mat-sidenav-container {
+  height: 100%;
+}
+
+mat-sidenav, mat-sidenav-content {
+  padding: 16px;
+}
+
+mat-sidenav {
+  background-color: lightcoral;
+  widows: 200px; ;
+}
+
+  .menu-buttons > a {
+    margin: 1rem;
+    display: block;
+  }

@@ -1,0 +1,17 @@
+<mat-sidenav-container>
+  <mat-sidenav #sidenav [(opened)]="opened" mode="side">
+    <div class="menu-buttons">
+      <a mat-raised-button [routerLink]="['/typography']"  routerLinkActive="router-link-active" >Typography</a>
+      <a mat-raised-button [routerLink]="['/buttons']"routerLinkActive="router-link-active">buttons</a>
+      <a mat-raised-button [routerLink]="['/button-toggles']"routerLinkActive="router-link-active">Toggle-buttons</a>
+      <a mat-raised-button [routerLink]="['/mat-icons']"routerLinkActive="router-link-active">Material Icons</a>
+    </div>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+    <button mat-raised-button (click)="opened=!opened">Toggle Opened</button>
+    <button mat-raised-button (click)="sidenav.open()">Open</button>
+    <button mat-raised-button (click)="sidenav.close()">Close</button>
+    <button mat-raised-button (click)="sidenav.toggle()">Toggle</button>
+  </mat-sidenav-content>
+</mat-sidenav-container>
