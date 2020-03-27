@@ -1,0 +1,35 @@
+<mat-form-field>
+
+  <mat-label>Topic</mat-label>
+  <mat-select [(value)]="selectedValue">
+    <mat-option>None</mat-option>
+      <mat-option value="angular">Angular</mat-option>
+      <mat-option value="react">React</mat-option>
+      <mat-option  value="vue">Vue</mat-option>
+  </mat-select>
+</mat-form-field>
+
+
+<br>
+The selected value is: {{selectedValue ? selectedValue : 'nothing'}}
+<br>
+
+<mat-form-field>
+
+  <mat-label>Topic</mat-label>
+  <mat-select [(value)]="selectedValue" multiple>
+    <mat-option>None</mat-option>
+      <mat-optgroup label="Framework">
+        <mat-option value="angular">Angular</mat-option>
+        <mat-option value="react">React</mat-option>
+        <mat-option  value="vue">Vue</mat-option>
+      </mat-optgroup>
+      <mat-optgroup label="something">
+        <mat-option value="mobile">Mobile</mat-option>
+        <mat-option value="native">Native</mat-option>
+        <mat-option  value="c#">Seasharp</mat-option>
+      </mat-optgroup>
+      
+  </mat-select>
+</mat-form-field>
+

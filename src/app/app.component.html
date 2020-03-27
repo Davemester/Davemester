@@ -20,7 +20,6 @@
 </app-sidenav>  
 
   <mat-menu #appMenu="matMenu" >
-    
       <a style="display: block;" mat-menu-item [routerLink]="['/typography']"  routerLinkActive="router-link-active" >Typography</a>
       <a  style="display: block;" mat-menu-item  [routerLink]="['/buttons']" routerLinkActive="router-link-active">buttons</a>
       <a  style="display: block;" mat-menu-item [routerLink]="['/button-toggles']" routerLinkActive="router-link-active">Toggle-buttons</a>
@@ -28,15 +27,26 @@
       <a  style="display: block;" mat-menu-item [routerLink]="['/mat-list']" routerLinkActive="router-link-active">Material List</a>
       <a  style="display: block;" mat-menu-item [routerLink]="['/mat-exp-panel']" routerLinkActive="router-link-active">Expansion panel</a>
       <a  style="display: block;" mat-menu-item [routerLink]="['/mat-cards']" routerLinkActive="router-link-active">Material Cards</a>
+      <a  style="display: block;" mat-menu-item [routerLink]="['/mat-tabs']" routerLinkActive="router-link-active">Material Tabs</a>    
+      <a  style="display: block;" mat-menu-item [routerLink]="['/mat-stepper']" routerLinkActive="router-link-active">Material Stepper</a> 
+      <a  style="display: block;" mat-menu-item [matMenuTriggerFor]="subMenu">Material Forms</a> 
 
-    
+      
+
   </mat-menu>
 
 
   <mat-menu #subMenu="matMenu">
-    <button mat-menu-item>Angular</button>
-    <button mat-menu-item>Angular2</button>
-    <button mat-menu-item>Angular3</button>
+    <a  style="display: block;" mat-menu-item [routerLink]="['/mat-input']" routerLinkActive="router-link-active">Input</a> 
+    <a  style="display: block;" mat-menu-item [routerLink]="['/mat-select']" routerLinkActive="router-link-active">Select</a> 
+    <a  style="display: block;" mat-menu-item [routerLink]="['/mat-autocomplete']" routerLinkActive="router-link-active">Autocomplete</a> 
+    <a  style="display: block;" mat-menu-item [routerLink]="['/mat-checkbox']" routerLinkActive="router-link-active">Checkbox</a> 
+    <a  style="display: block;" mat-menu-item [routerLink]="['/mat-datepicker']" routerLinkActive="router-link-active">Datepicker</a> 
+    <a  style="display: block;" mat-menu-item [routerLink]="['/mat-tooltips']" routerLinkActive="router-link-active">mat-tooltips</a> 
+    <a  style="display: block;" mat-menu-item [routerLink]="['/mat-snackbar']" routerLinkActive="router-link-active">mat-snackbar</a> 
+
+
+
 
   </mat-menu>
   
